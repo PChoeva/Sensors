@@ -11,8 +11,19 @@
 
     <!-- Bootstrap core CSS -->
     <!--<link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+<script src="https://code.jquery.com/jquery.js"></script> 
+ <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
 	<?php echo Asset::css('bootstrap.css'); ?>
 	<?php echo Asset::css('style.css'); ?>
+	<?php echo Asset::js('generateMap.js');?>
+	
+
+
 
     <!-- Custom styles for this template -->
 <!--    <link href="blog.css" rel="stylesheet"> -->

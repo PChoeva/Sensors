@@ -20,6 +20,8 @@ class Controller_Sensors extends Controller_Template
 			$sensor = new Model_Sensor();
 			$sensor->name = Input::post('name');
 			$sensor->unit = Input::post('unit');
+			$sensor->latitude = Input::post('latitude');
+			$sensor->longitude = Input::post('longitude');
 			
 			$sensor->save();
 			
@@ -74,6 +76,7 @@ class Controller_Sensors extends Controller_Template
 			'where' => array(
 				'id' => $id
 			)
+
 		));
 		
 		$data = array('sensor' => $sensor);
@@ -85,6 +88,8 @@ class Controller_Sensors extends Controller_Template
 			$sensor = Model_Sensor::find(Input::post('sensor_id'));
 			$sensor->name = Input::post('name');
 			$sensor->unit = Input::post('unit');
+			$sensor->latitude = Input::post('latitude');
+			$sensor->longitude = Input::post('longitude');
 			
 			$sensor->save();
 			

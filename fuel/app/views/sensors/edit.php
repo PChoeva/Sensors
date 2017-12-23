@@ -10,6 +10,14 @@
 		<?php echo Form::label('Unit', 'unit'); ?>
 		<?php echo Form::input('unit', Input::post('unit', isset($sensor) ? $sensor->unit : ''), array('class' => 'form-control')); ?>
 	</div>
+	<div class="form-group">
+		<?php echo Form::label('Latitude', 'latitude'); ?>
+		<?php echo Form::input('latitude', Input::post('latitude', isset($sensor) ? $sensor->latitude : ''), array('class' => 'form-control')); ?>
+	</div>
+	<div class="form-group">
+		<?php echo Form::label('Longitude', 'longitude'); ?>
+		<?php echo Form::input('longitude', Input::post('longitude', isset($sensor) ? $sensor->longitude : ''), array('class' => 'form-control')); ?>
+	</div>
 	
 	<input type="hidden" name="sensor_id" value="<?php echo $sensor->id; ?>">
 	
